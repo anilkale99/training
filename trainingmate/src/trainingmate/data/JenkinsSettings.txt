@@ -1,0 +1,29 @@
+Jenkins configuration
+•	Plugins to install
+o	Cucumber reports 
+o	HTML Publisher plugin
+o	Ant Plugin
+o	Build Timeout
+o	Email Extension Plugin
+o	GitHub Branch Source Plugin
+o	Gradle Plugin
+o	Maven Integration plugin
+o	Pipeline
+o	Pipeline: GitHub Groovy Libraries
+o	SSH Slaves plugin
+o	Subversion Plug-in
+o	TestNG Results Plugin
+o	Timestamper
+o	Workspace Cleanup Plugin
+
+•	Global Tool Configuration
+o	Jenkins ?Manage Jenkins ? Global Tool Configuration
+	Set Git path “C:\Program Files\Git\bin\git.exe”
+	Set name as “maven” and Maven path as “D:\Training\TrainingContent\SeleniumJars_Software\apache-maven-3.5.0”
+
+Jenkins + Extent Report
+•	If Extent report is not properly displayed in the browser (because of content security setting of Jenkins, please perform below steps)
+o	Go to Jenkins installation directory i.e. C:\Users\admin\.jenkins
+o	Open Jenkins.xml file
+o	In the arguments tag please add -Dhudson.model.DirectoryBrowserSupport.CSP="sandbox allow-scripts; script-src * 'self' 'unsafe-inline' 'unsafe-eval'"
+o	Save the file and restart the Jenkins from services
